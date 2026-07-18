@@ -1,0 +1,206 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.dashboard-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    margin-inline-start: 260px;
+    transition: margin-inline-start var(--transition);
+}
+
+/* Sidebar collapsed state */
+.dashboard-container.sidebar-collapsed .dashboard-main-wrapper {
+    margin-inline-start: 80px;
+}
+
+.dashboard-content-area {
+    flex: 1;
+    padding: var(--space-6);
+    background-color: var(--surface);
+    transition: background-color var(--transition);
+    overflow-y: auto;
+}
+
+.dashboard-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 998;
+    transition: opacity var(--transition);
+}
+
+/* Tablet & Mobile responsive adjustments */
+@media (max-width: 992px) {
+    .dashboard-main-wrapper {
+        margin-inline-start: 0 !important;
+    }
+    
+    .dashboard-content-area {
+        padding: var(--space-4);
+    }
+}
+
+/* Shared Dashboard Table & Pagination Styles */
+.table-responsive-wrapper {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: var(--space-4);
+}
+
+.dashboard-data-table {
+    border-collapse: collapse;
+    text-align: start;
+    width: 100%;
+    font-size: 0.925rem;
+}
+
+.dashboard-data-table th,
+.dashboard-data-table td {
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.dashboard-data-table th {
+    background-color: var(--surface);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.dashboard-data-table tbody tr {
+    transition: background-color var(--transition-fast);
+}
+
+.dashboard-data-table tbody tr:hover {
+    background-color: var(--surface);
+}
+
+/* Badges for status */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    text-transform: capitalize;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-badge.completed {
+    background-color: var(--success-soft);
+    color: var(--success);
+}
+
+.status-badge.pending {
+    background-color: var(--warning-soft);
+    color: var(--warning);
+}
+
+.status-badge.cancelled {
+    background-color: var(--danger-soft);
+    color: var(--danger);
+}
+
+.status-badge.active {
+    background-color: var(--success-soft);
+    color: var(--success);
+}
+
+.status-badge.inactive {
+    background-color: var(--text-muted);
+    color: var(--text-white);
+}
+
+/* Pagination navigation bar */
+.table-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    background-color: var(--bg);
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+
+.pagination-info {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.pagination-buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 var(--space-2);
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+    color: var(--text-secondary);
+    border-radius: var(--radius-xs);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    font-size: 0.85rem;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: var(--surface-2);
+    color: var(--text);
+    border-color: var(--text-secondary);
+}
+
+.pagination-btn.active {
+    background-color: var(--primary);
+    color: var(--text-white);
+    border-color: var(--primary);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Helper Utilities */
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .table-responsive-wrapper {
+        overflow-x: auto;
+    }
+}

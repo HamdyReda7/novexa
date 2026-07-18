@@ -1,0 +1,171 @@
+.dashboard-home-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.dashboard-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-5);
+}
+
+.dashboard-home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: var(--space-5);
+}
+
+.dashboard-panel {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.panel-icon {
+    color: var(--primary);
+}
+
+.panel-icon.status-green {
+    color: var(--success);
+}
+
+.panel-title {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.panel-body {
+    padding: var(--space-5);
+    flex: 1;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.activity-item {
+    display: flex;
+    gap: var(--space-4);
+    position: relative;
+}
+
+.activity-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    inset-inline-start: 5px;
+    width: 2px;
+    height: calc(100% + var(--space-4));
+    background-color: var(--border-light);
+}
+
+.activity-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    background-color: var(--primary);
+    border: 2px solid var(--bg);
+    margin-top: 4px;
+    z-index: 1;
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.activity-text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.activity-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Status pulses */
+.status-indicator-card {
+    display: flex;
+    gap: var(--space-4);
+    background-color: var(--surface);
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-light);
+}
+
+.pulse-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    background-color: var(--success);
+    margin-top: 6px;
+    position: relative;
+}
+
+.pulse-dot.green::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-full);
+    background-color: var(--success);
+    animation: statusPulse 2s infinite ease-out;
+}
+
+@keyframes statusPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.status-text-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.status-heading {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.status-paragraph {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 576px) {
+    .dashboard-home-grid {
+        grid-template-columns: 1fr;
+    }
+}

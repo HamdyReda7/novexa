@@ -1,0 +1,88 @@
+.dashboard-card {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-light);
+}
+
+.card-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title-text {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.card-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: var(--surface-2);
+    border-radius: var(--radius-sm);
+    color: var(--primary);
+}
+
+.card-body-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.card-value-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.card-badge-pill {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-full);
+}
+
+.card-badge-pill.success {
+    background-color: var(--success-soft);
+    color: var(--success);
+}
+
+.card-badge-pill.danger {
+    background-color: var(--danger-soft);
+    color: var(--danger);
+}
+
+.card-badge-pill.warning {
+    background-color: var(--warning-soft);
+    color: var(--warning);
+}
+
+.card-badge-pill.info {
+    background-color: var(--secondary-soft);
+    color: var(--secondary);
+}
+
+.card-desc-text {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}

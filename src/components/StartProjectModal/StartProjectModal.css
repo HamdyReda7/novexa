@@ -1,0 +1,170 @@
+/* Start Project Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background-color: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    animation: modalOverlayFadeIn 0.3s ease-out forwards;
+}
+
+/* Glassmorphic Modal Container */
+.modal-container {
+    background-color: color-mix(in srgb, var(--bg) 80%, transparent);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg), 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    max-inline-size: 580px;
+    inline-size: 100%;
+    max-block-size: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: var(--space-7) var(--space-6) var(--space-6) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    
+    /* Animation: opacity, scale(.95 -> 1), translateY(20px -> 0) */
+    animation: modalScaleUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Light / Dark Mode adaptation for glass effects */
+html[data-theme="dark"] .modal-container {
+    background-color: rgba(15, 23, 42, 0.7);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .modal-container {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+/* Close Button */
+.modal-close-btn {
+    position: absolute;
+    top: var(--space-4);
+    inset-inline-end: var(--space-4);
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border-color: var(--primary-light);
+    transform: rotate(90deg);
+}
+
+/* Modal Header Content */
+.modal-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.modal-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--primary-soft), var(--primary-light));
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: var(--space-2);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+}
+
+.modal-icon-rocket {
+    animation: rocketWiggle 3s ease-in-out infinite;
+}
+
+.modal-title {
+    color: var(--text);
+    font-size: clamp(1.4rem, 3vw, 1.75rem);
+    font-weight: 700;
+    margin: 0;
+}
+
+.modal-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 420px;
+}
+
+/* Modal Body */
+.modal-body {
+    inline-size: 100%;
+}
+
+/* Align modal contents for RTL */
+html[dir="rtl"] .modal-title,
+html[dir="rtl"] .modal-subtitle {
+    text-align: center;
+}
+
+/* Animations */
+@keyframes modalOverlayFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalScaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes rocketWiggle {
+    0%, 100% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: rotate(5deg) translateY(-2px);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 576px) {
+    .modal-container {
+        padding: var(--space-6) var(--space-4) var(--space-4) var(--space-4);
+        border-radius: var(--radius-md);
+        gap: var(--space-4);
+    }
+    
+    .modal-icon-wrapper {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+}

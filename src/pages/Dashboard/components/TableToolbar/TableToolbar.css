@@ -1,0 +1,122 @@
+.table-toolbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-4);
+    margin-bottom: var(--space-4);
+    flex-wrap: wrap;
+    box-shadow: var(--shadow-xs);
+}
+
+.toolbar-left-side {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.toolbar-search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 240px;
+    flex: 1;
+    max-width: 320px;
+}
+
+.toolbar-search-icon {
+    position: absolute;
+    inset-inline-start: var(--space-3);
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.toolbar-search-field {
+    width: 100%;
+    height: 38px;
+    padding-inline-start: var(--space-8);
+    padding-inline-end: var(--space-3);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xs);
+    color: var(--text);
+    font-size: 0.9rem;
+    transition: all var(--transition-fast);
+}
+
+.toolbar-search-field:focus {
+    background-color: var(--bg);
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-soft);
+}
+
+.toolbar-select-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-select-field {
+    height: 38px;
+    padding-inline: var(--space-3) var(--space-6);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xs);
+    color: var(--text);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.toolbar-select-field:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--primary-soft);
+}
+
+.toolbar-right-side {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    .toolbar-left-side {
+        width: 100%;
+    }
+    
+    .toolbar-search-input-wrapper {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    
+    .toolbar-select-field {
+        width: 100%;
+    }
+    
+    .toolbar-select-wrapper {
+        flex: 1;
+    }
+    
+    .toolbar-right-side {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

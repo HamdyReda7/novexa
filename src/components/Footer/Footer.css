@@ -1,0 +1,506 @@
+/* ==========================================================
+   Footer
+========================================================== */
+
+.footer {
+    position: relative;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding-block: 5rem 2rem;
+    overflow: hidden;
+}
+
+/* ==========================================================
+   Layout
+========================================================== */
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 3rem;
+    margin-block-end: 4rem;
+}
+
+/* ==========================================================
+   Company
+========================================================== */
+
+.footer-company {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    margin-block-end: 1.5rem;
+}
+
+.footer-logo img {
+    inline-size: 55px;
+    block-size: 55px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.footer-logo h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.footer-company p {
+    color: var(--text-secondary);
+    line-height: 1.9;
+    margin: 0;
+    max-inline-size: 340px;
+}
+
+/* ==========================================================
+   Social
+========================================================== */
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-block-start: 2rem;
+}
+
+.footer-social a {
+    inline-size: 46px;
+    block-size: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+
+    color: var(--text);
+
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+.footer-social svg {
+    font-size: 1.2rem;
+}
+
+/* ==========================================================
+   Links
+========================================================== */
+
+.footer-links h4 {
+    color: var(--text);
+    font-size: 1.15rem;
+    margin-block-end: 1.5rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-links li {
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.footer-links li:hover,
+.footer-links a:hover {
+    color: var(--primary);
+    transform: translateX(4px);
+}
+
+/* ==========================================================
+   CTA Card
+========================================================== */
+
+.footer-card {
+    background: linear-gradient(135deg,
+            var(--primary),
+            var(--primary-hover));
+
+    border-radius: var(--radius-lg);
+
+    padding: 2rem;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: var(--shadow-md);
+
+    transition: var(--transition);
+}
+
+.footer-card:hover {
+    transform: translateY(-8px);
+}
+
+.footer-card h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.footer-card p {
+    margin-block: 1rem 2rem;
+    line-height: 1.8;
+    opacity: .95;
+}
+
+.footer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+
+    inline-size: fit-content;
+
+    padding-block: .9rem;
+    padding-inline: 1.4rem;
+
+    background: #fff;
+    color: var(--primary);
+
+    text-decoration: none;
+
+    border-radius: var(--radius-md);
+
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+.footer-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.footer-btn svg {
+    transition: var(--transition);
+}
+
+.footer-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/* ================================================== */
+
+
+/* ==========================================================
+   Contact and Social Column Links
+   ========================================================== */
+
+.footer-contact-link,
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-contact-link:hover {
+    color: var(--primary);
+    transform: translateX(4px);
+}
+
+html[dir="rtl"] .footer-contact-link:hover {
+    transform: translateX(-4px);
+}
+
+.footer-contact-icon {
+    font-size: 1.15rem;
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.footer-contact-item span {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.footer-social-links {
+    display: flex;
+    gap: .85rem;
+}
+
+.footer-social-btn {
+    inline-size: 42px;
+    block-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer-social-btn:hover {
+    background: var(--primary);
+    color: var(--text-white);
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    color: #fff !important;
+}
+
+.footer-social-btn svg {
+    font-size: 1.15rem;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin-block: 2rem;
+}
+
+/* ==========================================================
+   Bottom
+========================================================== */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    padding-block-start: 1.5rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: .95rem;
+}
+
+.footer-bottom-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 2rem;
+
+    flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+
+    color: var(--text-muted);
+
+    transition: var(--transition);
+
+    font-size: .95rem;
+}
+
+.footer-bottom-links a:hover {
+    color: var(--primary);
+}
+
+/* ==========================================================
+   RTL
+========================================================== */
+
+.footer-company,
+.footer-links,
+.footer-card,
+.footer-contact,
+.footer-bottom {
+    text-align: start;
+}
+
+/* ==========================================================
+   Laptop
+========================================================== */
+
+@media (max-width:1200px) {
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+}
+
+/* ==========================================================
+   Tablet
+========================================================== */
+
+@media (max-width:992px) {
+
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-company p {
+        max-inline-size: 100%;
+    }
+
+    .footer-contact {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+}
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width:768px) {
+
+    .footer {
+        padding-block: 4rem 2rem;
+    }
+
+    .footer-top {
+        gap: 2.5rem;
+        margin-block-end: 3rem;
+    }
+
+    .footer-logo {
+        justify-content: flex-start;
+    }
+
+    .footer-card {
+        padding: 1.5rem;
+    }
+
+    .footer-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .footer-btn {
+        inline-size: 100%;
+    }
+
+    .footer-contact {
+        gap: 1rem;
+    }
+
+    .footer-contact>div {
+        padding: 1rem;
+    }
+
+    .footer-bottom {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+        gap: 1.25rem;
+    }
+
+}
+
+/* ==========================================================
+   Small Mobile
+========================================================== */
+
+@media (max-width:480px) {
+
+    .footer-logo img {
+        inline-size: 48px;
+        block-size: 48px;
+    }
+
+    .footer-logo h2 {
+        font-size: 1.4rem;
+    }
+
+    .footer-social {
+        flex-wrap: wrap;
+    }
+
+    .footer-social a {
+        inline-size: 42px;
+        block-size: 42px;
+    }
+
+    .footer-card {
+        padding: 1.25rem;
+    }
+
+}
+
+/* ---------- Admin Portal Button ---------- */
+.footer-admin-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-block-start: 1.5rem;
+    padding-block: 0.55rem;
+    padding-inline: 1.1rem;
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
+    color: #fff !important;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), opacity var(--transition-fast);
+    outline: none;
+}
+
+.footer-admin-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    opacity: 0.95;
+}
+
+.footer-admin-btn:active {
+    transform: translateY(0);
+}
+
+.footer-admin-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.footer-admin-btn-icon {
+    font-size: 0.95rem;
+}

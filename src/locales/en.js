@@ -1,0 +1,470 @@
+export default {
+    navbar: {
+        home: "Home",
+        services: "Services",
+        projects: "Projects",
+        about: "About",
+        contact: "Contact",
+        startProject: "Start a Project",
+        logoAlt: "Novexa logo",
+        primaryNavigation: "Primary navigation",
+        switchLanguage: "Switch language",
+        switchTheme: "Switch theme",
+        openMenu: "Open menu",
+        closeMenu: "Close menu",
+    },
+    hero: {
+        badge: "Custom Software Development, Done Right",
+        title: "Web & Software Development That Turns Ideas Into Growth",
+        description: "We design and build high-performing web applications, business websites, and custom software solutions — backed by sharp UI/UX design and architecture built to scale with your business.",
+        ctaStart: "Start Your Project",
+        ctaLearn: "Explore Our Work",
+        statRevenue: "Client Revenue Growth",
+        statUsers: "Active Users Reached",
+        statConversion: "Average Conversion Rate",
+        statRevenueValue: "$148,250",
+        statRevenueBadge: "+12.5%",
+        statUsersValue: "28,450",
+        statUsersBadge: "+8.2%",
+        statConversionValue: "4.8%",
+        statConversionBadge: "+1.5%",
+        terminalTitle: "novexa-cloud-terminal v2.0",
+    },
+    services: {
+        title: "Our Services",
+        description: "From business websites to custom software, we build digital solutions that help your business grow, convert, and scale.",
+        badge: "What We Offer",
+        cta: "Learn More",
+        items: {
+            webDev: {
+                title: "Web Development",
+                description: "We build fast, secure, SEO-friendly business websites and web applications that turn visitors into customers.",
+                features: ["Responsive Website", "SEO Friendly", "Fast Performance"],
+            },
+            mobileApps: {
+                title: "Mobile App Development",
+                description: "Native-quality iOS and Android apps built to give your customers a seamless experience on any device.",
+                features: ["Cross-Platform", "Mobile Friendly", "Smooth Performance"],
+            },
+            uiux: {
+                title: "UI/UX Design",
+                description: "Conversion-focused interfaces and intuitive user experiences that make your product easy to use and hard to forget.",
+                features: ["Custom Design", "User-Centered", "Interactive Prototypes"],
+            },
+            backend: {
+                title: "Custom Software Development",
+                description: "Secure, scalable backend systems and custom software built to handle growth, integrations, and real business logic.",
+                features: ["Scalable Architecture", "Secure Development", "API Integration"],
+            },
+            ecommerce: {
+                title: "E-Commerce Development",
+                description: "Online stores built to sell — with secure payments, smooth checkout, and a powerful dashboard to manage every order.",
+                features: ["Payment Integration", "Admin Dashboard", "Secure Checkout"],
+            },
+            ai: {
+                title: "AI Solutions",
+                description: "Custom automation, smart chatbots, and AI integrations that save your team time and improve customer experience.",
+                features: ["Smart Automation", "AI Chatbots", "Custom Integration"],
+            },
+        }
+    },
+    projects: {
+        title: "Our Projects",
+        description: "Explore our latest case studies and success stories of enterprise software deliveries.",
+        showcase: {
+            all: "All",
+            visitBtn: "Visit Website",
+            activeBadge: "Active",
+            emptyState: "No projects found.",
+            loading: "Loading projects...",
+            error: "Failed to load projects. Please try again.",
+            retry: "Retry",
+        },
+        items: {
+            item1: {
+                title: "Novexa Cloud Platform",
+                description: "A high-performance SaaS dashboard featuring real-time telemetry, advanced analytics, and dynamic localization.",
+            },
+            item2: {
+                title: "Apex CRM System",
+                description: "An enterprise-grade CRM solution built for scalability, featuring custom workflows and deep third-party integrations.",
+            },
+            item3: {
+                title: "Veloce E-Commerce",
+                description: "A headless commerce frontend optimized for speed, core web vitals, and seamless multi-currency checkout experiences.",
+            },
+        },
+    },
+    contact: {
+        title: "Contact Us",
+        description: "Have a project in mind? Reach out and let's build something exceptional together.",
+    },
+    startProject: {
+        title: "Start Your Project",
+        description: "Fill out the details and our engineering team will get in touch with you shortly.",
+    },
+    build: {
+        title: "What We Build",
+        subtitle: "We create modern digital solutions that combine performance, security, and exceptional user experience to help businesses grow.",
+        items: {
+            websites: {
+                title: "Custom Websites",
+                description: "We design and develop fast, responsive websites that reflect your brand identity and help you achieve your business goals.",
+            },
+            webApplications: {
+                title: "Web Applications",
+                description: "We build professional web applications and SaaS platforms using modern technologies for scalability, reliability, and high performance.",
+            },
+            frontend: {
+                title: "Frontend Development",
+                description: "Modern, responsive user interfaces with smooth interactions and an exceptional user experience across all devices.",
+            },
+            backend: {
+                title: "Backend Development",
+                description: "Robust and secure server-side architectures built to manage data and business logic with speed, stability, and scalability.",
+            },
+            api: {
+                title: "API Integration",
+                description: "Seamlessly connect your applications with third-party services through fast, secure, and reliable APIs.",
+            },
+            business: {
+                title: "Business Systems",
+                description: "Custom ERP, CRM, and internal business systems designed to automate workflows and improve operational efficiency.",
+            },
+        },
+    },
+    about: {
+        badge: "About Novexa",
+        title: "Building Digital Excellence for Modern Businesses Worldwide",
+        description: "NOVEXA is an enterprise-grade software development company. We combine cutting-edge technology with user-centric design to build high-performance, secure digital solutions that scale businesses worldwide.",
+        mission: {
+            title: "Our Mission",
+            text: "To build software that empowers businesses to scale seamlessly and lead their industries."
+        },
+        vision: {
+            title: "Our Vision",
+            text: "To redefine digital experiences by setting new standards in software architecture."
+        },
+        whyUs: {
+            title: "Why Choose Us",
+            text: "We deliver security-first solutions with transparent processes, clean code, and lifetime support."
+        },
+        features: {
+            tech: "Modern Tech",
+            code: "Clean Code",
+            security: "Secure Apps",
+            support: "Long Support"
+        },
+        stats: {
+            projects: {
+                number: "50",
+                suffix: "+",
+                label: "Projects"
+            },
+            clients: {
+                number: "20",
+                suffix: "+",
+                label: "Clients"
+            },
+            years: {
+                number: "5",
+                suffix: "+",
+                label: "Years"
+            },
+            support: {
+                number: "100",
+                suffix: "%",
+                label: "Support"
+            }
+        },
+        ctaStart: "Start Your Project",
+        ctaView: "View Projects",
+        imageAlt: "Novexa Enterprise Software Development Illustration"
+    },
+    contactSection: {
+        badge: "Contact Us",
+        title: "Let's Build Something Exceptional",
+        description: "Have a project in mind or need a custom digital solution? Our team is ready to turn your vision into a high-quality software product.",
+        info: {
+            email: {
+                title: "Email Us",
+                value: "novexacode@gmail.com",
+            },
+            phone: {
+                title: "Call Us",
+                value: "01023838099",
+            },
+            hours: {
+                title: "Office Hours",
+                value: "Sunday – Thursday, 9:00 AM – 6:00 PM",
+            },
+        },
+        form: {
+            name: "Full Name",
+            email: "Email Address",
+            phone: "Phone Number",
+            budget: "Budget Range",
+            details: "Project Details",
+            placeholders: {
+                name: "Enter your full name",
+                email: "example@email.com",
+                phone: "+1 (555) 000-0000",
+                budget: "e.g. $500 - $1000 or Negotiable",
+                details: "Tell us about your project, goals, and requirements...",
+            },
+            budgetOptions: {
+                option1: "Less than $1k",
+                option2: "$1k - $5k",
+                option3: "$5k - $10k",
+                option4: "$10k - $25k",
+                option5: "$25k+",
+            },
+            submit: "Send Request",
+            submitting: "Sending...",
+        },
+        validation: {
+            required: "This field is required.",
+            emailInvalid: "Please enter a valid email address.",
+            phoneInvalid: "Please enter a valid phone number.",
+            serverUnreachable: "The server is unreachable. Please check your internet connection.",
+            unexpectedError: "An unexpected error occurred. Please try again.",
+        },
+        success: {
+            title: "Success!",
+            msg: "Order request sent successfully.",
+        },
+        message: {
+            subject: "*New Project Inquiry*",
+            name: "Name",
+            email: "Email",
+            phone: "Phone",
+            budget: "Budget",
+            details: "Project Details",
+        },
+    },
+    footer: {
+        description: "We are your trusted software engineering partner, building modern websites, web applications, and business systems that help companies grow and succeed.",
+        navigation: {
+            title: "Navigation",
+            home: "Home",
+            services: "Services",
+            projects: "Projects",
+            about: "About",
+            contact: "Contact",
+        },
+        solutions: {
+            title: "Solutions",
+            websites: "Custom Websites",
+            webApps: "Web Applications",
+            frontend: "Frontend Development",
+            backend: "Backend Development",
+            api: "API Integration",
+        },
+        contact: {
+            title: "Contact",
+            emailLabel: "Email",
+            phoneLabel: "Phone",
+            locationLabel: "Location",
+            email: "novexacode@gmail.com",
+            phone: "01023838099",
+            location: "Mansoura, Egypt",
+        },
+        cta: {
+            title: "Ready to Start?",
+            description: "Let's turn your idea into a professional digital product that helps your business grow.",
+            button: "Start Your Project",
+        },
+        social: {
+            title: "Follow Us",
+        },
+        bottom: {
+            copyright: "© 2026 NOVEXA. All rights reserved.",
+            privacy: "Privacy Policy",
+            terms: "Terms of Service",
+            cookies: "Cookie Policy",
+            adminPortal: "Admin Portal",
+        },
+    },
+    dashboard: {
+        nav: {
+            title: "Admin Dashboard",
+            home: "Dashboard",
+            categories: "Categories",
+            projects: "Projects",
+            messages: "Messages",
+            logout: "Logout",
+            toggleSidebar: "Toggle Sidebar",
+        },
+        navbar: {
+            searchPlaceholder: "Search everything...",
+            notifications: "Notifications",
+            noNotifications: "No new notifications",
+            profile: "My Profile",
+            logout: "Logout",
+            role: "Super Admin",
+        },
+        common: {
+            actions: "Actions",
+            edit: "Edit",
+            delete: "Delete",
+            create: "Create",
+            search: "Search",
+            filter: "Filter",
+            sort: "Sort by",
+            status: "Status",
+            showing: "Showing",
+            to: "to",
+            of: "of",
+            entries: "entries",
+            emptyStateTitle: "No records found",
+            emptyStateDesc: "It seems there is no data to show in this view yet.",
+            save: "Save",
+            cancel: "Cancel",
+            thumbnail: "Thumbnail",
+        },
+        home: {
+            title: "Overview",
+            subtitle: "Welcome back to your administration dashboard.",
+            stats: {
+                users: "Active Users",
+                projects: "Active Projects",
+                messages: "Unread Messages",
+            },
+            recentActivity: "Recent Activity",
+            systemStatus: "System Status",
+            statusNormal: "All systems operational",
+        },
+
+        categories: {
+            title: "Project Categories",
+            subtitle: "Organize and configure services and projects categories.",
+            createBtn: "Add Category",
+            createTitle: "Add New Category",
+            editTitle: "Edit Category",
+            confirmDeleteTitle: "Delete Category",
+            confirmDeleteText: "Are you sure you want to delete this category? This action cannot be undone.",
+            table: {
+                hash: "#",
+                name: "Category Name",
+                nameAr: "Arabic Name",
+                nameEn: "English Name",
+                image: "Image",
+                slug: "Slug",
+                count: "Projects Count",
+                status: "Status",
+                actions: "Actions",
+            },
+            form: {
+                nameAr: "Arabic Name",
+                nameArPlaceholder: "e.g. موبايل ابلكيشن",
+                nameEn: "English Name",
+                nameEnPlaceholder: "e.g. Mobile Application",
+                image: "Category Image",
+                noImage: "No Image",
+                uploadBtn: "Choose Image",
+            },
+            status: {
+                active: "Active",
+                inactive: "Inactive",
+                pending: "Pending",
+            },
+            toast: {
+                createSuccess: "Category created successfully.",
+                updateSuccess: "Category updated successfully.",
+                deleteSuccess: "Category deleted successfully.",
+            },
+            emptyState: {
+                title: "No categories found",
+                desc: "Add project categories to classify portfolio projects.",
+                action: "Create First Category",
+            },
+        },
+        projects: {
+            title: "Projects Portfolio",
+            subtitle: "Manage customer case studies and enterprise software project details.",
+            createBtn: "Add Project",
+            createTitle: "Add New Project",
+            editTitle: "Edit Project",
+            confirmDeleteTitle: "Delete Project",
+            confirmDeleteText: "Are you sure you want to delete this project? This action cannot be undone.",
+            table: {
+                hash: "#",
+                thumbnail: "Image",
+                name: "Project Name",
+                nameAr: "Arabic Name",
+                nameEn: "English Name",
+                category: "Category",
+                link: "Website Link",
+                status: "Status",
+                actions: "Actions",
+            },
+            form: {
+                category: "Category",
+                nameAr: "Arabic Name",
+                nameEn: "English Name",
+                descAr: "Arabic Description",
+                descEn: "English Description",
+                link: "Website Link (Optional)",
+                image: "Project Image",
+                noImage: "No Image",
+            },
+            toast: {
+                createSuccess: "Project created successfully.",
+                updateSuccess: "Project updated successfully.",
+                deleteSuccess: "Project deleted successfully.",
+            },
+            emptyState: {
+                title: "No projects found",
+                desc: "No projects are registered in the system yet. Click Add Project to start.",
+                action: "Create First Project",
+            },
+        },
+
+        messages: {
+            title: "Order Inquiries",
+            subtitle: "Review incoming customer project inquiries and status metrics.",
+            confirmDeleteTitle: "Delete Request",
+            confirmDeleteText: "Are you sure you want to delete this order request? This action cannot be undone.",
+            detailTitle: "Order Request Details",
+            loadingDetails: "Fetching details...",
+            retry: "Retry",
+            status: {
+                new: "New",
+                reviewed: "Reviewed",
+                completed: "Completed",
+                unknown: "Unknown",
+            },
+            emptyState: {
+                title: "No inquiries found",
+                desc: "No customer requests are logged in this list yet.",
+            },
+            table: {
+                hash: "#",
+                sender: "Sender",
+                name: "Customer Name",
+                email: "Email Address",
+                phone: "Phone Number",
+                budget: "Budget",
+                date: "Created At",
+                status: "Status",
+                actions: "Actions",
+            },
+            toast: {
+                deleteSuccess: "Order request deleted successfully.",
+            },
+        },
+
+        auth: {
+            loginTitle: "Administrator Login",
+            loginSubtitle: "Access your admin control panel",
+            emailLabel: "Email Address",
+            passwordLabel: "Password",
+            emailPlaceholder: "Enter email address",
+            passwordPlaceholder: "Enter password",
+            submitBtn: "Sign In",
+            submitting: "Signing In...",
+            invalidRoleError: "Access denied. You do not have permission to view this dashboard.",
+            networkError: "A network error occurred. Please try again.",
+        },
+    },
+};

@@ -1,0 +1,47 @@
+.empty-state-card {
+    background-color: var(--bg);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-9) var(--space-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    margin: var(--space-8) auto;
+    box-shadow: var(--shadow-xs);
+}
+
+.empty-state-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background-color: var(--surface-2);
+    color: var(--text-muted);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-5);
+    border: 1px solid var(--border-light);
+}
+
+.empty-state-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 var(--space-2) 0;
+}
+
+.empty-state-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    max-width: 380px;
+    margin: 0 0 var(--space-6) 0;
+    line-height: 1.5;
+}
+
+.empty-state-action {
+    display: flex;
+    justify-content: center;
+}
