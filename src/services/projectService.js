@@ -1,11 +1,6 @@
 import api from "./api";
 
 export const projectService = {
-    async getAllProjects() {
-        const response = await api.get("/projects/all?page=1");
-        return response.data;
-    },
-
     async getProjects(page = 1) {
         const response = await api.get(`/projects/all?page=${page}`);
         return response.data;

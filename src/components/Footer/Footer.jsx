@@ -11,7 +11,7 @@ import {
     FiMapPin,
     FiShield,
 } from "react-icons/fi";
-import { FaTiktok } from "react-icons/fa";
+import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 import logo from "../../assets/images/logo_nav.png";
 
@@ -61,6 +61,11 @@ function Footer() {
             icon: <FaTiktok />,
             href: "https://www.tiktok.com/@novexacodee",
             label: "TikTok",
+        },
+        {
+            icon: <FaWhatsapp />,
+            href: "https://wa.me/201036874108",
+            label: "WhatsApp",
         },
     ];
 
@@ -120,7 +125,7 @@ function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href={`tel:${t("footer.contact.phone")}`} className="footer-contact-link">
+                                <a href="tel:+201036874108" className="footer-contact-link">
                                     <FiPhone className="footer-contact-icon" />
                                     <span>{t("footer.contact.phone")}</span>
                                 </a>

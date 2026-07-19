@@ -1,8 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import "./Build.css";
 import useTranslation from "../../hooks/useTranslation";
-import { projectService }  from "../../services/projectService";
-import { categoryService } from "../../services/categoryService";
+import { websiteService } from "../../services/websiteService";
 import CategoryFilter from "./CategoryFilter";
 import ProjectCard    from "./ProjectCard";
 import LoadingSkeleton from "./LoadingSkeleton";
@@ -24,23 +23,24 @@ function Build() {
         setLoading(true);
         setError(false);
         try {
-            const [catRes, projRes] = await Promise.all([
-                categoryService.getAllCategories(1),
-                projectService.getAllProjects(),
-            ]);
+            const res = await websiteService.getProjects();
 
-            if (catRes && catRes.success && projRes && projRes.success) {
-                // Only show active categories (status === 1 or true or "1")
-                const activeCats = (catRes.data || []).filter(
-                    (c) => c.status === 1 || c.status === true || c.status === "1"
-                );
-                setCategories(activeCats);
-
+            if (res && res.success) {
                 // Only show active projects (status === 1 or true or "1")
-                const activeProj = (projRes.data || []).filter(
+                const activeProj = (res.data || []).filter(
                     (p) => p.status === 1 || p.status === true || p.status === "1"
                 );
                 setProjects(activeProj);
+
+                // Extract active categories dynamically from projects
+                const uniqueCatsMap = new Map();
+                activeProj.forEach((p) => {
+                    if (p.category && p.category.id) {
+                        uniqueCatsMap.set(String(p.category.id), p.category);
+                    }
+                });
+                const activeCats = Array.from(uniqueCatsMap.values());
+                setCategories(activeCats);
             } else {
                 setError(true);
             }
@@ -57,10 +57,17 @@ function Build() {
 
     /* ── Local filtering — no additional API call ───────────────── */
     const filteredProjects = useMemo(() => {
-        if (String(selectedCategory).toLowerCase() === "all") return projects;
-        return projects.filter(
-            (p) => p.category && String(p.category.id) === String(selectedCategory)
-        );
+        const isAll = String(selectedCategory).toLowerCase() === "all";
+        const matching = isAll
+            ? projects
+            : projects.filter(
+                (p) => p.category && String(p.category.id) === String(selectedCategory)
+            );
+
+        if (projects.length > 6) {
+            return matching.slice(0, 6);
+        }
+        return matching;
     }, [projects, selectedCategory]);
 
     /* ── Render ─────────────────────────────────────────────────── */

@@ -286,12 +286,13 @@
   background: rgb(0 0 0 / 45%);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition: opacity 100ms ease-in, visibility 100ms ease-in;
 }
 
 .navbar__overlay--visible {
   opacity: 1;
   visibility: visible;
+  transition: opacity 350ms ease-in-out, visibility 350ms ease-in-out;
 }
 
 /* ---------- Sidebar ---------- */
@@ -318,17 +319,20 @@
   transform: scale(0.97);
   transform-origin: top center;
 
-  /* "Pop" easing: slight overshoot on the way in, no overshoot needed on the way out */
   transition:
-    inset-inline-end 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
-    opacity 0.3s ease,
-    transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+    inset-inline-end 100ms ease-in,
+    opacity 100ms ease-in,
+    transform 100ms ease-in;
 }
 
 .navbar__sidebar--open {
   inset-inline-end: 0;
   opacity: 1;
   transform: scale(1);
+  transition:
+    inset-inline-end 350ms ease-in-out,
+    opacity 350ms ease-in-out,
+    transform 350ms ease-in-out;
 }
 
 .navbar__sidebar-top {
@@ -510,8 +514,8 @@
   opacity: 0;
 
   transition:
-    transform 300ms ease,
-    opacity 300ms ease;
+    transform 100ms ease-in,
+    opacity 100ms ease-in;
 }
 
 /* RTL: sidebar still sits on inline-end (now the left side visually),
@@ -523,6 +527,9 @@
 .navbar__sidebar--open {
   transform: translateX(0);
   opacity: 1;
+  transition:
+    transform 350ms ease-in-out,
+    opacity 350ms ease-in-out;
 }
 
 
@@ -552,8 +559,8 @@
   opacity: 0;
 
   transition:
-    transform 300ms ease,
-    opacity 300ms ease;
+    transform 100ms ease-in,
+    opacity 100ms ease-in;
 }
 
 .navbar__sidebar:dir(rtl) {
@@ -563,4 +570,7 @@
 .navbar__sidebar--open {
   transform: translateX(0);
   opacity: 1;
+  transition:
+    transform 350ms ease-in-out,
+    opacity 350ms ease-in-out;
 }

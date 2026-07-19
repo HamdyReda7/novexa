@@ -192,7 +192,7 @@ export default {
             },
             phone: {
                 title: "Call Us",
-                value: "01023838099",
+                value: "+20 103 687 4108",
             },
             hours: {
                 title: "Office Hours",
@@ -266,7 +266,7 @@ export default {
             phoneLabel: "Phone",
             locationLabel: "Location",
             email: "novexacode@gmail.com",
-            phone: "01023838099",
+            phone: "+20 103 687 4108",
             location: "Mansoura, Egypt",
         },
         cta: {

@@ -192,7 +192,7 @@ export default {
             },
             phone: {
                 title: "اتصل بنا",
-                value: "01023838099",
+                value: "+20 103 687 4108",
             },
             hours: {
                 title: "ساعات العمل",
@@ -266,7 +266,7 @@ export default {
             phoneLabel: "رقم الهاتف",
             locationLabel: "الموقع",
             email: "novexacode@gmail.com",
-            phone: "01023838099",
+            phone: "+20 103 687 4108",
             location: "المنصورة, مصر",
         },
         cta: {

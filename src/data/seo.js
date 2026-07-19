@@ -55,7 +55,7 @@ export const pagesSEO = {
  */
 export const companyDetails = {
     email: "novexacode@gmail.com",
-    phone: "+201023838099",
+    phone: "+20 103 687 4108",
     address: {
         addressLocality: "Mansoura",
         addressCountry: "EG"
