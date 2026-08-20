@@ -21,7 +21,7 @@ export const resolveImageUrl = (image) => {
 // Request Interceptor: Attach token if present
 api.interceptors.request.use(
     (config) => {
-        const token = localStorage.getItem("authToken");
+        const token = sessionStorage.getItem("authToken") || localStorage.getItem("authToken");
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }
@@ -37,9 +37,10 @@ api.interceptors.response.use(
     (response) => response,
     (error) => {
         if (error.response && error.response.status === 401) {
+            sessionStorage.removeItem("authToken");
+            sessionStorage.removeItem("authUser");
             localStorage.removeItem("authToken");
             localStorage.removeItem("authUser");
-            window.location.href = "/login";
         }
         return Promise.reject(error);
     }
