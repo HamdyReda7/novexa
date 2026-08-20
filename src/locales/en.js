@@ -226,6 +226,12 @@ export default {
                 value: "Sunday – Thursday, 9:00 AM – 6:00 PM",
             },
         },
+        whatsapp: {
+            title: "Direct WhatsApp Inquiry",
+            description: "Have an urgent project requirement? Chat directly with our engineering team on WhatsApp.",
+            buttonText: "Chat on WhatsApp",
+            phone: "+20 103 687 4108"
+        },
         form: {
             name: "Full Name",
             email: "Email Address",
