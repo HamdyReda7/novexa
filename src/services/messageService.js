@@ -14,5 +14,19 @@ export const messageService = {
     async deleteOrder(id) {
         const response = await api.delete(`/delete/order/${id}`);
         return response.data;
+    },
+
+    async createOrder(data) {
+        try {
+            const response = await api.post("/orders", data);
+            return response.data;
+        } catch (e) {
+            try {
+                const response = await api.post("/contact", data);
+                return response.data;
+            } catch {
+                throw e;
+            }
+        }
     }
 };
