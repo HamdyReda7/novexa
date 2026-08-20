@@ -372,7 +372,8 @@
 
 @media (max-width: 991px) {
     .hero {
-        padding-top: calc(var(--navbar-height) + 0.40rem);
+        padding-top: calc(var(--navbar-height) + 0.40rem)git commit -m "Describe your changes"
+;
         padding-bottom: 2.5rem;
     }
     .hero__container {
