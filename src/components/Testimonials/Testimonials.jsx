@@ -6,73 +6,53 @@ import "./Testimonials.css";
 const TESTIMONIALS_DATA = [
     {
         id: 1,
-        name: "ألكسندر رايت",
-        name_en: "Alexander Wright",
-        role: "رئيس قطاع التكنولوجيا",
-        role_en: "Chief Technology Officer",
+        name: "أحمد عبد الفتاح",
+        role: "مدير التكنولوجيا (CTO)",
         company: "Nexus Cloud",
-        company_en: "Nexus Cloud",
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
         rating: 5,
-        quote: "قامت نوفيكسا بهندسة البنية التحتية السحابية لمنصتنا بالكامل. كان اهتمامهم بالأداء والأمان ودقة الواجهات لا مثيل له. شهدنا زيادة بنسبة 140% في كفاءة النظام.",
-        quote_en: "Novexa engineered our entire cloud infrastructure from scratch. Their attention to performance, security, and UI precision was unmatched. We saw a 140% surge in system efficiency.",
-        tag: "Fintech & Cloud",
+        quote: "شغل نوفيكسا في البنية التحتية والموقع بتاعنا كان بجد ممتاز جداً. اهتمامهم بالسرعة والأمان والأداء فوق الممتاز، والسيستم بقى أسرع وأكفأ بكتير من الأول.",
+        tag: "حلول سحابية وفينتك",
     },
     {
         id: 2,
-        name: "سارة لين",
-        name_en: "Sarah Lin",
-        role: "مديرة المنتجات",
-        role_en: "Head of Product",
-        company: "OmniPay Global",
-        company_en: "OmniPay Global",
+        name: "سارة مجدي",
+        role: "رئيسة قسم المنتجات",
+        company: "OmniPay",
         avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
         rating: 5,
-        quote: "العمل مع نوفيكسا يشبه امتلاك فريق تطوير من نخبة سيليكون فالي. قاموا بتسليم تطبيق الفينتك الخاص بنا قبل 3 أسابيع من الجدول المحدد بدقة متناهية.",
-        quote_en: "Working with Novexa feels like having a Silicon Valley dev team in-house. They delivered our fintech application 3 weeks ahead of schedule with zero compromises.",
-        tag: "Digital Banking",
+        quote: "التعامل مع فريق نوفيكسا مريح جداً وباحترافية عالية. سلموا لنا تطبيق الفينتك قبل الميعاد بـ 3 أسابيع وبأعلى جودة ومفيش أي أخطاء.",
+        tag: "بنوك وتطبيقات رقمية",
     },
     {
         id: 3,
-        name: "ماركوس فانس",
-        name_en: "Marcus Vance",
+        name: "مهندس محمود فؤاد",
         role: "المؤسس والرئيس التنفيذي",
-        role_en: "Founder & CEO",
         company: "Apex Logistics",
-        company_en: "Apex Logistics",
         avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
         rating: 5,
-        quote: "نظام إدارة المؤسسات المخصص الذي طورته نوفيكسا قام بأتمتة 80% من عملياتنا اليومية. تحقق عائد الاستثمار بالكامل في الربع الأول من الإطلاق.",
-        quote_en: "The custom ERP software developed by Novexa automated 80% of our daily operations. We achieved complete ROI within the first quarter of deployment.",
-        tag: "Enterprise ERP",
+        quote: "نظام الـ ERP اللي نوفيكسا عملوه للمؤسسة بتاعتنا وفر علينا وقت ومجهود كبير جداً، وسهل شغل الأقسام والعمليات اليومية بشكل غير عادي.",
+        tag: "أنظمة شركات ERP",
     },
     {
         id: 4,
-        name: "دانيال ميلر",
-        name_en: "Daniel Miller",
+        name: "د. طارق السعيد",
         role: "مدير هندسة البرمجيات",
-        role_en: "VP of Software Engineering",
-        company: "Veloce Mobility",
-        company_en: "Veloce Mobility",
+        company: "Veloce",
         avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80",
         rating: 5,
-        quote: "واجهات المستخدم الذكية والسرعة الفائقة للتطبيق جعلت عملائنا يمنحوننا تقييم 4.9 على متجر التطبيقات. نوفيكسا هي الشريك التقني الأفضل دائماً.",
-        quote_en: "The sleek micro-interactions and blazing speed earned us a 4.9 rating on the App Store. Novexa is our go-to engineering powerhouse.",
-        tag: "Mobile App",
+        quote: "التطبيق سلس وسريع جداً وتجربة المستخدم ممتازة، وده عكس في تقييمات العملاء عندنا على الـ App Store وبقى 4.9. نوفيكسا دايماً اختيارنا الأول.",
+        tag: "تطبيقات جوال",
     },
     {
         id: 5,
-        name: "إيلينا روتشيلد",
-        name_en: "Elena Rothschild",
-        role: "مديرة الاستراتيجية الرقمية",
-        role_en: "Chief Digital Officer",
+        name: "م. نهى الشريف",
+        role: "مديرة التحول الرقمي",
         company: "Aura Health",
-        company_en: "Aura Health",
         avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
         rating: 5,
-        quote: "تكاملات الذكاء الاصطناعي التي صممتها نوفيكسا ساهمت في خفض تكاليف خدمة العملاء بنسبة 45% وتوفير تجربة استجابة فورية فائقة السرعة.",
-        quote_en: "Novexa's AI automation workflows reduced our customer support latency by 45% while delivering personalized instant recommendations.",
-        tag: "AI & Automation",
+        quote: "حلول الذكاء الاصطناعي والأتمتة اللي عملوها أسرعت الرد على العملاء وسهلت الشغل جداً ووفرت أكتر من 45% من التكاليف التشغيلية.",
+        tag: "ذكاء اصطناعي وأتمتة",
     },
 ];
 
@@ -115,13 +95,13 @@ function Testimonials() {
             <div className="testimonials__container">
                 <div className="testimonials__header text-center">
                     <span className="testimonials__badge">
-                        {t("testimonials.badge") || (isArabic ? "آراء العملاء" : "Testimonials")}
+                        {t("testimonials.badge") || "آراء العملاء"}
                     </span>
                     <h2 className="testimonials__title">
-                        {t("testimonials.title") || (isArabic ? "ثقة رواد الأعمال وقادة التكنولوجيا" : "Trusted by Tech Leaders")}
+                        {t("testimonials.title") || "ثقة رواد الأعمال وقادة التكنولوجيا"}
                     </h2>
                     <p className="testimonials__description">
-                        {t("testimonials.description") || (isArabic ? "تعرف على كيفية توسيع الشركات الرائدة لمنصاتها الرقمية مع نوفيكسا." : "Discover how market leaders scale their digital platforms with Novexa.")}
+                        {t("testimonials.description") || "تعرف على تجارب عملائنا وكيف ساعدتهم نوفيكسا في تطوير وتوسيع منصاتهم الرقمية."}
                     </p>
                 </div>
 
@@ -164,27 +144,27 @@ function Testimonials() {
                                         </div>
 
                                         <p className="testimonial-card__quote">
-                                            "{isArabic ? item.quote : item.quote_en}"
+                                            "{item.quote}"
                                         </p>
 
                                         <div className="testimonial-card__footer">
                                             <div className="testimonial-card__author-info">
                                                 <img 
                                                     src={item.avatar} 
-                                                    alt={isArabic ? item.name : item.name_en} 
+                                                    alt={item.name} 
                                                     className="testimonial-card__avatar"
                                                 />
                                                 <div className="testimonial-card__meta">
                                                     <div className="testimonial-card__name-row">
                                                         <h4 className="testimonial-card__name">
-                                                            {isArabic ? item.name : item.name_en}
+                                                            {item.name}
                                                         </h4>
                                                         <span className="verified-badge" title="Verified Client">
                                                             <FiCheckCircle size={14} />
                                                         </span>
                                                     </div>
                                                     <span className="testimonial-card__role">
-                                                        {isArabic ? item.role : item.role_en} • <strong className="company-name">{isArabic ? item.company : item.company_en}</strong>
+                                                        {item.role} • <strong className="company-name">{item.company}</strong>
                                                     </span>
                                                 </div>
                                             </div>
