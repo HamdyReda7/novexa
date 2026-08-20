@@ -1,0 +1,266 @@
+/* ==========================================================
+   NOVEXA FOOTER - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.footer {
+    background-color: var(--bg-alt);
+    border-top: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* CTA Card Banner */
+.footer__cta-banner {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer__cta-card {
+    background: linear-gradient(135deg, var(--primary) 0%, #1D4ED8 100%);
+    border-radius: var(--radius-xl);
+    padding: 3rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow: 0 20px 40px -10px var(--primary-glow);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__cta-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+}
+
+.footer__cta-content {
+    max-width: 650px;
+}
+
+.footer__cta-badge {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius-full);
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.footer__cta-heading {
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.footer__cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 1.8rem;
+    background-color: #FFFFFF;
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all var(--transition-fast);
+}
+
+.footer__cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    background-color: #F8FAFC;
+}
+
+/* Main Footer Grid */
+.footer__main {
+    padding: 4rem 0 3rem 0;
+}
+
+.footer__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.2fr;
+    gap: 3rem;
+}
+
+.footer__brand-tagline {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 1.25rem 0 0.5rem 0;
+}
+
+.footer__description {
+    color: var(--text-secondary);
+    font-size: 0.925rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    max-width: 360px;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer__social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.footer__social-btn:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+.footer__col-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.02em;
+}
+
+.footer__links,
+.footer__contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer__links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.footer__links a:hover {
+    color: var(--primary);
+}
+
+.footer__contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer__contact-icon {
+    color: var(--primary);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.footer__contact-list a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer__contact-list a:hover {
+    color: var(--primary);
+}
+
+/* Bottom Copyright Bar */
+.footer__bottom {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+}
+
+.footer__bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.footer__bottom-links {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer__bottom-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer__bottom-links a:hover {
+    color: var(--primary);
+}
+
+.footer__admin-link {
+    font-weight: 600;
+    color: var(--primary) !important;
+}
+
+@media (max-width: 991px) {
+    .footer__cta-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 2rem;
+    }
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .footer__col--brand {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+    .footer__col--brand {
+        grid-column: span 1;
+    }
+    .footer__bottom-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

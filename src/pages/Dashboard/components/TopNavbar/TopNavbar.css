@@ -1,0 +1,117 @@
+/* ==========================================================
+   NOVEXA DASHBOARD TOP NAVBAR - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.dashboard-navbar {
+    height: 72px;
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-toggle-burger {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.navbar-page-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.85rem;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.navbar-action-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 1px solid var(--border);
+}
+
+html[dir="rtl"] .profile-container {
+    padding-left: 0;
+    padding-right: 0.75rem;
+    border-left: none;
+    border-right: 1px solid var(--border);
+}
+
+.profile-avatar, .profile-avatar-img {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+}
+
+.profile-avatar {
+    background-color: var(--primary);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.profile-details-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+@media (max-width: 991px) {
+    .mobile-toggle-burger {
+        display: flex;
+    }
+}

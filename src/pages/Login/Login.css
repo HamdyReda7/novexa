@@ -1,0 +1,206 @@
+/* ==========================================================
+   NOVEXA ADMIN LOGIN - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.login-page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-page-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.18) 0%, rgba(37, 99, 235, 0) 70%);
+    pointer-events: none;
+}
+
+.login-toolbar {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 10;
+}
+
+.toolbar-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 0.9rem;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.toolbar-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.login-card-container {
+    width: 100%;
+    max-width: 440px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 3rem 2.5rem;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    z-index: 5;
+}
+
+.login-brand-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.login-header-group {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -0.02em;
+}
+
+.login-subtitle {
+    font-size: 0.925rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.login-error-banner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.1rem;
+    background-color: var(--danger-subtle);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: var(--radius-md);
+    color: #EF4444;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.login-form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group-field label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.input-with-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-field-icon {
+    position: absolute;
+    left: 1rem;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+html[dir="rtl"] .input-field-icon {
+    left: auto;
+    right: 1rem;
+}
+
+.login-text-input {
+    width: 100%;
+    padding: 0.85rem 1rem 0.85rem 2.75rem;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: all var(--transition-fast);
+}
+
+html[dir="rtl"] .login-text-input {
+    padding: 0.85rem 2.75rem 0.85rem 1rem;
+}
+
+.login-text-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-subtle);
+    background-color: var(--surface);
+}
+
+.login-submit-btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.95rem;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 20px var(--primary-glow);
+    transition: all var(--transition-fast);
+    margin-top: 0.75rem;
+}
+
+.login-submit-btn-action:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px var(--primary-glow);
+}
+
+.login-submit-btn-action:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.auth-loading-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg);
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+}

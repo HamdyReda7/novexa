@@ -1,0 +1,122 @@
+/* ==========================================================
+   NOVEXA DASHBOARD TABLE TOOLBAR - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.table-toolbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow-sm);
+}
+
+.toolbar-left-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.toolbar-search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 240px;
+    flex: 1;
+    max-width: 340px;
+}
+
+.toolbar-search-icon {
+    position: absolute;
+    inset-inline-start: 1rem;
+    color: var(--text-muted);
+    pointer-events: none;
+}
+
+.toolbar-search-field {
+    width: 100%;
+    height: 42px;
+    padding-inline-start: 2.75rem;
+    padding-inline-end: 1rem;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: 0.9rem;
+    transition: all var(--transition-fast);
+}
+
+.toolbar-search-field:focus {
+    background-color: var(--surface);
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-subtle);
+}
+
+.toolbar-select-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-select-field {
+    height: 42px;
+    padding-inline: 1rem 2rem;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.toolbar-select-field:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px var(--primary-subtle);
+}
+
+.toolbar-right-side {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    .toolbar-left-side {
+        width: 100%;
+    }
+    .toolbar-search-input-wrapper {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .toolbar-select-field {
+        width: 100%;
+    }
+    .toolbar-select-wrapper {
+        flex: 1;
+    }
+    .toolbar-right-side {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

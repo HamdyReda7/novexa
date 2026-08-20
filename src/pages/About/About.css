@@ -1,0 +1,298 @@
+/* ==========================================================
+   NOVEXA ABOUT SECTION - PREMIUM BRAND REDESIGN
+   ========================================================== */
+
+.about {
+    padding: 4rem 0;
+    background-color: var(--bg-alt);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.about__container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.about__header {
+    max-width: 720px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+}
+
+.about__badge {
+    display: inline-block;
+    padding: 0.4rem 1.1rem;
+    background-color: var(--primary-subtle);
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: var(--radius-full);
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(37, 99, 235, 0.15);
+}
+
+.about__title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.2;
+    margin: 0 0 1.25rem 0;
+    letter-spacing: -0.025em;
+}
+
+.about__description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Main 2-Column Grid */
+.about__grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 3rem;
+    align-items: stretch;
+    margin-bottom: 4rem;
+}
+
+/* Brand Showcase Card */
+.about__brand-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 3rem 2.5rem;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.about__brand-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-subtle);
+}
+
+.about__brand-glow-effect {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, rgba(37, 99, 235, 0) 70%);
+    pointer-events: none;
+}
+
+.about__brand-logo-wrapper {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__brand-logo-img {
+    max-height: 52px;
+    width: auto;
+    object-fit: contain;
+}
+
+.about__brand-tagline {
+    margin-bottom: 1.75rem;
+}
+
+.tagline-pill {
+    display: inline-block;
+    padding: 0.45rem 1.25rem;
+    background: var(--primary-subtle);
+    color: var(--primary);
+    font-size: 0.825rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.about__brand-quote {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0 0 2.25rem 0;
+    max-width: 480px;
+}
+
+.about__features-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.about__feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 0.925rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.about__feature-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background-color: var(--primary-subtle);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+/* Pillar Stack (Mission, Vision, Why Us) */
+.about__pillars-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.about__pillar-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 1.75rem 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about__pillar-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.about__pillar-icon-box {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-lg);
+    background-color: var(--primary-subtle);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    transition: transform var(--transition-fast);
+}
+
+.about__pillar-card:hover .about__pillar-icon-box {
+    transform: scale(1.08);
+    background-color: var(--primary);
+    color: #FFFFFF;
+    box-shadow: 0 6px 18px var(--primary-glow);
+}
+
+.about__pillar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__pillar-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--text);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+}
+
+.about__pillar-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Stats Row */
+.about__stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.about__stat-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 2.25rem 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.about__stat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-subtle);
+    box-shadow: var(--shadow-md);
+}
+
+.about__stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+}
+
+.about__stat-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 991px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+    }
+    .about__stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .about__features-grid {
+        grid-template-columns: 1fr;
+    }
+    .about__stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .about__title {
+        font-size: 2.25rem;
+    }
+    .about__brand-card {
+        padding: 2rem 1.5rem;
+    }
+}

@@ -1,0 +1,166 @@
+/* ==========================================================
+   NOVEXA BRAND DESIGN SYSTEM - BRAND IDENTITY RULES
+   Primary Blue: #2563EB
+   Dark Background: #0D0E11
+   Dark Cards: #16181D
+   Light Background: #FFFFFF / #E5E7EB
+   Gray: #6B7280
+   Typography: SF Pro Display / System UI
+   ========================================================== */
+
+:root {
+    color-scheme: light;
+
+    /* Brand Primary Color Palette */
+    --primary: #2563EB;
+    --primary-hover: #1D4ED8;
+    --primary-active: #1E40AF;
+    --primary-light: #3B82F6;
+    --primary-subtle: rgba(37, 99, 235, 0.08);
+    --primary-glow: rgba(37, 99, 235, 0.25);
+
+    /* Secondary Accent Palette */
+    --secondary: #0D0E11;
+    --accent: #38BDF8;
+    --accent-glow: rgba(56, 189, 248, 0.2);
+
+    /* System Feedback Status Colors */
+    --success: #10B981;
+    --success-subtle: rgba(16, 185, 129, 0.1);
+    --warning: #F59E0B;
+    --warning-subtle: rgba(245, 158, 11, 0.1);
+    --danger: #EF4444;
+    --danger-subtle: rgba(239, 68, 68, 0.1);
+
+    /* Light Mode Surfaces & Backgrounds */
+    --bg: #FFFFFF;
+    --bg-alt: #F8FAFC;
+    --surface: #FFFFFF;
+    --surface-hover: #F1F5F9;
+    --surface-active: #E2E8F0;
+
+    /* Light Mode Typography & Muted Grays */
+    --text: #0D0E11;
+    --text-secondary: #4B5563;
+    --text-muted: #6B7280;
+    --text-white: #FFFFFF;
+
+    /* Light Mode Borders & Lines */
+    --border: #E5E7EB;
+    --border-hover: #CBD5E1;
+    --border-focus: #2563EB;
+
+    /* Modern Soft Elevation & Glass Shadows */
+    --shadow-xs: 0 1px 2px rgba(13, 14, 17, 0.05);
+    --shadow-sm: 0 4px 12px rgba(13, 14, 17, 0.06);
+    --shadow-md: 0 10px 25px -5px rgba(37, 99, 235, 0.08), 0 8px 16px -6px rgba(13, 14, 17, 0.04);
+    --shadow-lg: 0 20px 40px -12px rgba(37, 99, 235, 0.12), 0 12px 24px -8px rgba(13, 14, 17, 0.06);
+    --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.35);
+
+    /* Border Radius System */
+    --radius-xs: 6px;
+    --radius-sm: 10px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+    --radius-full: 9999px;
+
+    /* Spacing System */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-7: 2rem;
+    --space-8: 3rem;
+    --space-9: 4rem;
+    --space-10: 6rem;
+
+    /* Container & Layout Constants */
+    --container-width: 1280px;
+    --navbar-height: 84px;
+
+    /* Modern Apple-like Animation Easings */
+    --ease-out-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-fast: 0.18s var(--ease-out-smooth);
+    --transition: 0.3s var(--ease-out-smooth);
+    --transition-slow: 0.5s var(--ease-out-smooth);
+    --font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* ==========================================================
+   LIGHT THEME OVERRIDES
+   ========================================================== */
+html[data-theme="light"] {
+    color-scheme: light;
+    --bg: #FFFFFF;
+    --bg-alt: #F8FAFC;
+    --surface: #FFFFFF;
+    --surface-hover: #F1F5F9;
+    --surface-active: #E2E8F0;
+    --text: #0D0E11;
+    --text-secondary: #4B5563;
+    --text-muted: #6B7280;
+    --border: #E5E7EB;
+    --border-hover: #D1D5DB;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(229, 231, 235, 0.6);
+}
+
+/* ==========================================================
+   DARK THEME OVERRIDES (MATCHING BRAND RULES)
+   Background: #0D0E11
+   Primary: #2563EB
+   Cards: #16181D
+   Text: White
+   ========================================================== */
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0D0E11;
+    --bg-alt: #121419;
+    --surface: #16181D;
+    --surface-hover: #1E222A;
+    --surface-active: #262B35;
+    --text: #FFFFFF;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
+    --border: #222630;
+    --border-hover: #333947;
+    --glass-bg: rgba(22, 24, 29, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+html {
+    scroll-padding-top: var(--navbar-height);
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color var(--transition), color var(--transition);
+    overflow-x: hidden;
+}
+
+.main-content {
+    padding-block-start: var(--navbar-height);
+    min-height: calc(100vh - var(--navbar-height));
+}

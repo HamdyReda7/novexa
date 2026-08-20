@@ -1,0 +1,173 @@
+/* ==========================================================
+   NOVEXA DASHBOARD HOME - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.dashboard-home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.dashboard-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.dashboard-home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.dashboard-panel {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--bg-alt);
+}
+
+.panel-icon {
+    color: var(--primary);
+}
+
+.panel-icon.status-green {
+    color: #10B981;
+}
+
+.panel-title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.panel-body {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.activity-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.activity-item {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.activity-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    inset-inline-start: 5px;
+    width: 2px;
+    height: calc(100% + 1rem);
+    background-color: var(--border);
+}
+
+.activity-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    background-color: var(--primary);
+    border: 2px solid var(--surface);
+    margin-top: 4px;
+    z-index: 1;
+    box-shadow: 0 0 8px var(--primary-glow);
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.activity-text {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.activity-meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* Status Panel Card */
+.status-indicator-card {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--bg-alt);
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+.pulse-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: var(--radius-full);
+    background-color: #10B981;
+    margin-top: 4px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.pulse-dot.green::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-full);
+    background-color: #10B981;
+    animation: statusPulse 2s infinite ease-out;
+}
+
+@keyframes statusPulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(2.5); opacity: 0; }
+}
+
+.status-text-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.status-heading {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.status-paragraph {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 991px) {
+    .dashboard-home-grid {
+        grid-template-columns: 1fr;
+    }
+}

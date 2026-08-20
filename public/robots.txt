@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Exclude private admin pages and endpoints from crawlers
+Disallow: /login
+Disallow: /dashboard/
+Disallow: /dashboard
+
+# Link to the XML Sitemap
+Sitemap: https://indigo-badger-333662.hostingersite.com/sitemap.xml

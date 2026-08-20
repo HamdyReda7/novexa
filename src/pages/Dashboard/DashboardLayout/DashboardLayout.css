@@ -1,0 +1,59 @@
+/* ==========================================================
+   NOVEXA DASHBOARD LAYOUT - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg);
+    position: relative;
+    width: 100%;
+}
+
+/* Main Wrapper offset by sidebar width using Logical Properties */
+.dashboard-main-wrapper {
+    flex: 1;
+    margin-inline-start: 260px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    transition: margin-inline-start 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Collapsed Sidebar Offset */
+.dashboard-container.sidebar-collapsed .dashboard-main-wrapper {
+    margin-inline-start: 80px;
+}
+
+/* Main Content Area */
+.dashboard-content-area {
+    padding: 2rem;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+}
+
+/* Mobile Overlay Backdrop */
+.dashboard-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 14, 17, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 95;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 991px) {
+    .dashboard-main-wrapper {
+        margin-inline-start: 0 !important;
+    }
+    .dashboard-content-area {
+        padding: 1.25rem 1rem;
+    }
+}

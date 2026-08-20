@@ -1,0 +1,25 @@
+/* ==========================================================
+   NOVEXA DASHBOARD MESSAGES PAGE - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.messages-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sender-info-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.sender-name {
+    font-weight: 700;
+    color: var(--text);
+}
+
+.sender-email {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}

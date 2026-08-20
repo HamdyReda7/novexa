@@ -1,0 +1,41 @@
+/* ==========================================================
+   NOVEXA DASHBOARD CATEGORIES PAGE - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.categories-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.create-cat-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 42px;
+    padding: 0 1.25rem;
+    background-color: var(--primary);
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px var(--primary-glow);
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.create-cat-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--primary-glow);
+}
+
+.category-thumbnail-img {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+    border: 1px solid var(--border);
+}

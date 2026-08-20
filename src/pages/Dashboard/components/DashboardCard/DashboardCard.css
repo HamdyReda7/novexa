@@ -1,0 +1,92 @@
+/* ==========================================================
+   NOVEXA DASHBOARD CARD - BRAND IDENTITY REDESIGN
+   ========================================================== */
+
+.dashboard-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-subtle);
+}
+
+.card-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.card-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--primary-subtle);
+    border-radius: var(--radius-md);
+    color: var(--primary);
+}
+
+.card-body-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card-value-text {
+    font-size: 1.85rem;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1.1;
+}
+
+.card-badge-pill {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-full);
+}
+
+.card-badge-pill.success {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10B981;
+}
+
+.card-badge-pill.danger {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #EF4444;
+}
+
+.card-badge-pill.warning {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: #F59E0B;
+}
+
+.card-badge-pill.info {
+    background-color: var(--primary-subtle);
+    color: var(--primary);
+}
+
+.card-desc-text {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
