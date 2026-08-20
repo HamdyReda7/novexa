@@ -372,7 +372,7 @@
 
 @media (max-width: 991px) {
     .hero {
-        padding-top: calc(var(--navbar-height) + 0.70rem);
+        padding-top: calc(var(--navbar-height) + 0.40rem);
         padding-bottom: 2.5rem;
     }
     .hero__container {
