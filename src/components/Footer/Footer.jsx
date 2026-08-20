@@ -115,13 +115,13 @@ function Footer() {
             <div className="footer__bottom">
                 <div className="footer__container footer__bottom-container">
                     <p className="footer__copyright">{t("footer.bottom.copyright")}</p>
-                    <div className="footer__bottom-links">
+                    {/* <div className="footer__bottom-links">
                         <a href="/login" className="footer__admin-link">{t("footer.bottom.adminPortal")}</a>
                         <span>•</span>
                         <a href="#privacy">{t("footer.bottom.privacy")}</a>
                         <span>•</span>
                         <a href="#terms">{t("footer.bottom.terms")}</a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>
