@@ -372,15 +372,15 @@
 
 @media (max-width: 991px) {
     .hero {
-        padding-top: calc(var(--navbar-height) + 1.25rem);
-        padding-bottom: 3rem;
+        padding-top: calc(var(--navbar-height) + 0.70rem);
+        padding-bottom: 2.5rem;
     }
     .hero__container {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 2rem;
     }
     .hero__title {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
     .hero__visual {
         margin-top: 0.5rem;
@@ -391,13 +391,33 @@
 }
 
 @media (max-width: 640px) {
+    .hero {
+        padding-top: calc(var(--navbar-height) + 0.4rem);
+        padding-bottom: 2rem;
+    }
+    .hero__container {
+        padding: 0 1.25rem;
+        gap: 1.5rem;
+    }
+    .hero__badge {
+        margin-bottom: 0.85rem;
+        padding: 0.35rem 0.9rem;
+    }
+    .hero__badge-text {
+        font-size: 0.8rem;
+    }
     .hero__title {
         font-size: 2.1rem;
+        margin-bottom: 1rem;
+    }
+    .hero__description {
+        font-size: 0.975rem;
+        margin-bottom: 1.25rem;
     }
     .hero__actions {
         flex-direction: column;
         width: 100%;
-        margin-bottom: 1.75rem;
+        margin-bottom: 1.5rem;
     }
     .hero__btn {
         width: 100%;
@@ -407,7 +427,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
-        padding: 1.1rem 1rem;
+        padding: 1rem 0.85rem;
         width: 100%;
     }
     .hero__stat-divider {
@@ -416,5 +436,11 @@
     .hero__stat-lbl {
         font-size: 0.75rem;
         white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-top: calc(var(--navbar-height) + 0.25rem);
     }
 }

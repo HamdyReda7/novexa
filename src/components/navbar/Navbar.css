@@ -18,7 +18,7 @@
 
 .navbar--scrolled {
     box-shadow: var(--shadow-sm);
-    height: 76px;
+    height: calc(var(--navbar-height) - 6px);
 }
 
 .navbar__container {
@@ -337,5 +337,14 @@ html[dir="rtl"] .navbar__sidebar {
     }
     .navbar__hamburger {
         display: inline-flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar__container {
+        padding: 0 1.25rem;
+    }
+    .navbar__hamburger {
+        padding: 0.45rem;
     }
 }
