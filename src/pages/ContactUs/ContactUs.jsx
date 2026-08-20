@@ -103,28 +103,6 @@ function ContactUs() {
                             </div>
                         </div>
 
-                        {/* Direct WhatsApp Callout */}
-                        {/* <div className="contact__whatsapp-box">
-                            <div className="contact__wa-header">
-                                <div className="contact__wa-icon-box">
-                                    <FaWhatsapp size={24} />
-                                </div>
-                                <div className="contact__wa-text-group">
-                                    <h4 className="contact__wa-title">{t("contactSection.whatsapp.title")}</h4>
-                                    <p className="contact__wa-desc">{t("contactSection.whatsapp.description")}</p>
-                                </div>
-                            </div>
-                            <a 
-                                href="https://wa.me/201036874108" 
-                                target="_blank" 
-                                rel="noreferrer" 
-                                className="contact__wa-btn"
-                            >
-                                <FaWhatsapp size={20} className="contact__wa-btn-icon" />
-                                <span>{t("contactSection.whatsapp.buttonText")}</span>
-                                <span className="contact__wa-btn-num">(+20 103 687 4108)</span>
-                            </a>
-                        </div> */}
                     </div>
 
                     {/* Right Form Card */}
