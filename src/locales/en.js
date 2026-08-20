@@ -270,6 +270,7 @@ export default {
         },
     },
     footer: {
+        tagline: "We Code. We Innovate. We Elevate.",
         description: "We are your trusted software engineering partner, building modern websites, web applications, and business systems that help companies grow and succeed.",
         navigation: {
             title: "Navigation",

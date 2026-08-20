@@ -50,7 +50,7 @@ function Footer() {
                         <div className="footer__col footer__col--brand">
                             <NovexaLogo size={36} />
                             <p className="footer__brand-tagline">
-                                We Code. We Innovate. We Elevate.
+                                {t("footer.tagline")}
                             </p>
                             <p className="footer__description">
                                 {t("footer.description")}
