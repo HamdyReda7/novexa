@@ -55,10 +55,18 @@ export default function Messages() {
         setError(false);
         try {
             const response = await messageService.getAllMessages(page);
-            if (response && response.success) {
-                setMessages(response.data || []);
+            if (response) {
+                const list = response.data?.data || response.data || response.messages || (Array.isArray(response) ? response : []);
+                setMessages(Array.isArray(list) ? list : []);
                 if (response.pagination) {
                     setPagination(response.pagination);
+                } else if (response.data?.current_page) {
+                    setPagination({
+                        current_page: response.data.current_page,
+                        last_page: response.data.last_page || 1,
+                        per_page: response.data.per_page || 10,
+                        total: response.data.total || (Array.isArray(list) ? list.length : 0)
+                    });
                 }
             } else {
                 setError(true);
