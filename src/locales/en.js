@@ -65,6 +65,291 @@ export default {
                 description: "Custom automation, smart chatbots, and AI integrations that save your team time and improve customer experience.",
                 features: ["Smart Automation", "AI Chatbots", "Custom Integration"],
             },
+        },
+        page: {
+            backToServices: "Back to All Services",
+            homeLink: "Home",
+            servicesLink: "Services",
+            quickOverview: "Service Overview",
+            techStackTitle: "Technologies & Frameworks",
+            processTitle: "How We Deliver This Service",
+            benefitsTitle: "Why Choose Novexa For This Service",
+            faqTitle: "Frequently Asked Questions",
+            otherServicesTitle: "Explore Other Services",
+            contactBadge: "Get Started Today",
+            readyTitle: "Ready to Transform Your Business with ",
+            readyDesc: "Partner with our engineering team to build high-impact digital solutions tailored specifically to your business goals.",
+            ctaButton: "Schedule a Consultation",
+            estimateTitle: "Need a Custom Quote?",
+            estimateDesc: "Speak directly with our technical experts to receive a detailed scope and timeline estimation.",
+            deliverablesTitle: "Key Deliverables",
+        },
+        details: {
+            webDev: {
+                badge: "Web Engineering",
+                title: "High-Performance Web Development Solutions",
+                tagline: "Speed, Security, and Scalability for Modern Web Applications",
+                heroDescription: "We engineer lightning-fast, conversion-optimised websites and complex web applications built to scale with your business growth and dominate search engine rankings.",
+                stats: [
+                    { number: "99.9%", label: "Uptime Guaranteed" },
+                    { number: "<1.2s", label: "Average Load Time" },
+                    { number: "100+", label: "Web Applications Built" },
+                    { number: "100%", label: "Mobile Responsive" }
+                ],
+                overview: {
+                    heading: "Transforming Your Digital Presence into a Growth Engine",
+                    paragraphs: [
+                        "In today's competitive digital landscape, a website is far more than a digital brochure — it is your most powerful sales channel and the cornerstone of your brand identity. At Novexa, we craft bespoke web applications that blend stunning aesthetics with enterprise-grade performance.",
+                        "Our engineering team uses modern frontend frameworks like React and Next.js coupled with robust cloud infrastructure to guarantee rapid load times, seamless user interactions, and robust security protocols. Whether you need a customer-facing SaaS portal, a corporate platform, or a complex web app, we deliver tailored code without bloat."
+                    ]
+                },
+                deliverables: [
+                    "Bespoke Responsive Web Architecture",
+                    "Search Engine Optimization (SEO) & Core Web Vitals Optimization",
+                    "Content Management System (CMS) Integration",
+                    "Continuous Integration & Automated Deployment Setup",
+                    "Comprehensive Performance & Accessibility Audits"
+                ],
+                benefits: [
+                    { title: "Blazing Fast Speeds", description: "Sub-second page loads that reduce bounce rates and maximize user retention." },
+                    { title: "SEO-First Architecture", description: "Built from the ground up to rank higher on search engines and attract organic traffic." },
+                    { title: "Enterprise Security", description: "Hardened against web vulnerabilities with SSL encryption, CORS, and sanitised inputs." },
+                    { title: "Cross-Device Compatibility", description: "Flawless rendering and interaction across desktops, tablets, and smartphones." }
+                ],
+                techStack: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "GraphQL", "Vite", "Docker"],
+                process: [
+                    { step: "01", title: "Discovery & Architecture", description: "We analyze your business goals, target audience, and functional requirements to draft technical specs." },
+                    { step: "02", title: "UI/UX & Wireframing", description: "Designing intuitive user flows and high-fidelity mockups that reflect your brand identity." },
+                    { step: "03", title: "Agile Development", description: "Writing modular, clean, and testable code in sprint iterations with regular feedback cycles." },
+                    { step: "04", title: "Quality & Security Testing", description: "Rigorous stress testing, cross-browser validation, and security vulnerability scans." },
+                    { step: "05", title: "Deployment & Maintenance", description: "Zero-downtime deployment on cloud servers with ongoing monitoring and feature updates." }
+                ],
+                faqs: [
+                    { question: "How long does a custom web development project take?", answer: "Project timelines depend on complexity. Standard corporate websites take 3-4 weeks, while complex SaaS applications take 6-12 weeks." },
+                    { question: "Do you build custom solutions or use template site builders?", answer: "We build fully custom web applications tailored precisely to your technical requirements and business logic." },
+                    { question: "Will my website be mobile-friendly and optimized for SEO?", answer: "Yes, 100%. All our web solutions adhere strictly to Google Core Web Vitals guidelines and mobile-first principles." }
+                ]
+            },
+            mobileApps: {
+                badge: "Mobile Solutions",
+                title: "Native & Cross-Platform Mobile App Development",
+                tagline: "Engaging Mobile Experiences Available Anywhere, Anytime",
+                heroDescription: "We design and build feature-rich, high-performance mobile applications for iOS and Android that deliver intuitive user experiences and drive retention.",
+                stats: [
+                    { number: "4.9/5", label: "Average App Rating" },
+                    { number: "2x", label: "Faster Market Delivery" },
+                    { number: "50+", label: "Mobile Apps Launched" },
+                    { number: "99.8%", label: "Crash-Free Sessions" }
+                ],
+                overview: {
+                    heading: "Putting Your Business Directly into Your Customers' Hands",
+                    paragraphs: [
+                        "Mobile applications provide a direct, personalized link between your business and your customers. We develop custom iOS and Android solutions that leverage native hardware capabilities to deliver smooth 60fps animations and offline capabilities.",
+                        "Using cross-platform frameworks like React Native and Flutter alongside native Swift and Kotlin integrations, we reduce time-to-market by up to 40% while maintaining native-level performance, smooth user interactions, and robust background sync."
+                    ]
+                },
+                deliverables: [
+                    "iOS (App Store) & Android (Google Play) App Publishing",
+                    "Offline Data Sync & Local Caching",
+                    "Push Notifications & In-App Messaging Infrastructure",
+                    "Biometric Authentication & Secure Storage",
+                    "Real-Time Telemetry & Analytics Integration"
+                ],
+                benefits: [
+                    { title: "Native-Level Performance", description: "60 FPS smooth rendering with instant UI feedback and gesture support." },
+                    { title: "Cross-Platform Efficiency", description: "Single codebase execution across iOS and Android without sacrificing user experience." },
+                    { title: "Offline Readiness", description: "Smart local caching ensures full functionality even with intermittent connectivity." },
+                    { title: "Seamless App Store Approval", description: "Full compliance with Apple and Google design guidelines for fast publication." }
+                ],
+                techStack: ["React Native", "Flutter", "Swift", "Kotlin", "Firebase", "Redux Toolkit", "REST / GraphQL", "SQLite"],
+                process: [
+                    { step: "01", title: "Strategy & UX Wireframes", description: "Mapping out mobile user journeys, gesture interactions, and technical requirements." },
+                    { step: "02", title: "UI Design & Prototypes", description: "Creating clickable app prototypes that adhere to Human Interface & Material Design guidelines." },
+                    { step: "03", title: "App Engineering", description: "Developing core feature logic, API connections, state management, and push notifications." },
+                    { step: "04", title: "Multi-Device QA", description: "Testing across dozens of physical mobile screen sizes, OS versions, and network speeds." },
+                    { step: "05", title: "App Store Publishing", description: "Handling submission, metadata setup, app review compliance, and live deployment." }
+                ],
+                faqs: [
+                    { question: "Should I build a React Native/Flutter app or separate native apps?", answer: "For 95% of business applications, cross-platform (React Native/Flutter) provides 100% native quality at nearly half the development cost and development time." },
+                    { question: "Do you handle App Store and Google Play store submissions?", answer: "Yes, we handle the entire submission, app store compliance, metadata optimization, and publication process." }
+                ]
+            },
+            uiux: {
+                badge: "Product Design",
+                title: "User-Centered UI/UX Design & Prototyping",
+                tagline: "Designs That Captivate Users and Drive Measurable Conversions",
+                heroDescription: "We blend user research, wireframing, and modern micro-interactions to create intuitive interfaces that convert visitors into loyal customers.",
+                stats: [
+                    { number: "+65%", label: "Higher Conversion Rate" },
+                    { number: "100%", label: "Custom Design Systems" },
+                    { number: "300+", label: "Prototypes Designed" },
+                    { number: "<3s", label: "Time To User Clarity" }
+                ],
+                overview: {
+                    heading: "Designing Products People Love to Use",
+                    paragraphs: [
+                        "Great software isn't just about code — it's about providing a seamless, enjoyable user experience. Our UI/UX design team focuses on solving real human problems through research-backed interface design and elegant visual hierarchies.",
+                        "We create comprehensive design systems, interactive Figma prototypes, and micro-animations that reflect your brand identity while ensuring every user click feels effortless and natural."
+                    ]
+                },
+                deliverables: [
+                    "User Research & Journey Mapping Reports",
+                    "High-Fidelity Interactive Figma Mockups",
+                    "Scalable Design Systems & UI Style Guides",
+                    "Micro-Interactions & Animation Specs",
+                    "Usability Testing & Conversion Rate Audits"
+                ],
+                benefits: [
+                    { title: "Increased Conversions", description: "Optimized user flows and call-to-actions designed specifically to boost signups and sales." },
+                    { title: "Scalable Design System", description: "Consistent UI components that streamline future product development." },
+                    { title: "Reduced Support Costs", description: "Intuitive UX minimizes user friction and customer service inquiries." },
+                    { title: "Interactive Prototypes", description: "Test and validate your product before writing a single line of code." }
+                ],
+                techStack: ["Figma", "Adobe XD", "Framer", "Protopie", "Lottie", "Design Tokens", "Storybook"],
+                process: [
+                    { step: "01", title: "User Research & Audits", description: "Analyzing target personas, user journeys, competitor gaps, and key conversion metrics." },
+                    { step: "02", title: "Wireframing & Information Architecture", description: "Drafting low-fidelity structural layouts to refine core navigation and feature flows." },
+                    { step: "03", title: "Visual UI Design", description: "Applying color theory, typography, gradients, and brand assets to create polished visual screens." },
+                    { step: "04", title: "Interactive Prototyping", description: "Building clickable interactive prototypes to test real-world user interactions." },
+                    { step: "05", title: "Developer Hand-off", description: "Exporting clean design tokens, asset packages, and precise layout specifications for engineers." }
+                ],
+                faqs: [
+                    { question: "What deliverables will I receive from the UI/UX design phase?", answer: "You will receive full access to Figma files, interactive clickable prototypes, design system documentation, typography & color guidelines, and asset exports." },
+                    { question: "Can you redesign our existing platform without starting from scratch?", answer: "Yes! We specialize in legacy UI/UX modernizations that preserve core database logic while giving the app a fresh, modern aesthetic." }
+                ]
+            },
+            backend: {
+                badge: "Backend & Systems",
+                title: "Scalable Custom Software & API Engineering",
+                tagline: "Bulletproof Backend Architecture Built for Uninterrupted Scale",
+                heroDescription: "We build reliable microservices, cloud backend infrastructure, and secure custom business software designed to process millions of transactions flawlessly.",
+                stats: [
+                    { number: "99.99%", label: "Target Availability" },
+                    { number: "10M+", label: "Daily API Requests" },
+                    { number: "0", label: "Security Compromises" },
+                    { number: "<50ms", label: "Average API Response" }
+                ],
+                overview: {
+                    heading: "The Powerhouse Architecture Behind High-Growth Platforms",
+                    paragraphs: [
+                        "Behind every great digital product is a rock-solid backend infrastructure. We design custom software systems, scalable REST & GraphQL APIs, and high-speed database layers that keep your operations running 24/7.",
+                        "Our backend engineers specialize in microservices architecture, cloud-native deployments (AWS/Google Cloud), automated background jobs, and bank-grade data encryption to ensure your software is fast, resilient, and secure."
+                    ]
+                },
+                deliverables: [
+                    "High-Throughput RESTful & GraphQL APIs",
+                    "Relational & NoSQL Database Architecture",
+                    "Microservices Architecture & Event Queues",
+                    "OAuth2 / JWT Authentication & Role Security",
+                    "Cloud Infrastructure Setup (AWS / GCP / Docker / K8s)"
+                ],
+                benefits: [
+                    { title: "Infinite Scalability", description: "Architected with auto-scaling to effortlessly absorb massive traffic spikes." },
+                    { title: "Bank-Grade Data Security", description: "Encrypted data in transit and at rest with strict access control policies." },
+                    { title: "Clean API Integration", description: "Smooth third-party integrations with CRM, ERP, payment gateways, and custom services." },
+                    { title: "Automated Monitoring", description: "Real-time health monitoring and automated alerts for immediate issue resolution." }
+                ],
+                techStack: ["Node.js", "Python / Django", "Go", "PostgreSQL", "Redis", "MongoDB", "Docker", "AWS", "Kubernetes"],
+                process: [
+                    { step: "01", title: "System Architecture Design", description: "Defining database schemas, API contracts, domain models, and infrastructure topology." },
+                    { step: "02", title: "Database & API Development", description: "Building high-performance database models, indexing, and RESTful/GraphQL endpoints." },
+                    { step: "03", title: "Security & Auth Layer", description: "Implementing strict access controls, data encryption, rate limiting, and RBAC security." },
+                    { step: "04", title: "Load & Stress Testing", description: "Simulating heavy concurrent user traffic to identify bottlenecks and optimize performance." },
+                    { step: "05", title: "CI/CD & Cloud Launch", description: "Deploying automated deployment pipelines with continuous integration and logging." }
+                ],
+                faqs: [
+                    { question: "Which databases do you use for backend development?", answer: "We choose the optimal database for your workload: PostgreSQL or MySQL for complex relational data, Redis for caching, and MongoDB for flexible document storage." },
+                    { question: "Can you integrate our new software with existing legacy systems?", answer: "Yes, we build custom API wrappers and middleware layers to connect modern software seamlessly with legacy backends." }
+                ]
+            },
+            ecommerce: {
+                badge: "E-Commerce",
+                title: "High-Converting E-Commerce Platforms & Stores",
+                tagline: "Turn Browsers into Buyers with Frictionless Shopping Experiences",
+                heroDescription: "We engineer high-speed online stores and custom headless commerce platforms with streamlined checkouts, automated inventory management, and secure multi-currency payments.",
+                stats: [
+                    { number: "3.5x", label: "Average Sales Growth" },
+                    { number: "<2s", label: "Checkout Completion" },
+                    { number: "100%", label: "PCI-DSS Compliant" },
+                    { number: "50k+", label: "Monthly Orders Managed" }
+                ],
+                overview: {
+                    heading: "Optimised Online Stores Built for Maximum Revenue",
+                    paragraphs: [
+                        "E-commerce success hinges on speed, trust, and simplicity. We build custom e-commerce web applications and headless storefronts designed to maximize conversion rates and average order values.",
+                        "From seamless payment integration (Stripe, PayPal, Apple Pay, Local Payment Gateways) to automated inventory tracking and real-time order notifications, we deliver complete solutions that scale with your catalog size."
+                    ]
+                },
+                deliverables: [
+                    "Custom Headless E-Commerce Storefront",
+                    "Multi-Currency & Local Payment Gateway Integration",
+                    "Automated Inventory & Order Management Dashboard",
+                    "Customer Portal & Order Tracking",
+                    "Custom Discount Engine & Abandoned Cart Recovery"
+                ],
+                benefits: [
+                    { title: "Frictionless Checkout", description: "One-click checkout flows optimized to reduce cart abandonment rates." },
+                    { title: "Global Payment Gateways", description: "Support for credit cards, digital wallets, BNPL, and local region payments." },
+                    { title: "Real-Time Inventory Sync", description: "Automated stock tracking across sales channels prevents overselling." },
+                    { title: "Advanced Analytics", description: "Gain insights into customer behavior, top-selling products, and revenue metrics." }
+                ],
+                techStack: ["Shopify Headless", "Next.js", "WooCommerce", "Stripe", "PayPal", "PostgreSQL", "Node.js", "Redis"],
+                process: [
+                    { step: "01", title: "Catalog & Workflow Mapping", description: "Defining product structures, inventory variants, shipping rules, and payment gateways." },
+                    { step: "02", title: "Storefront UX/UI Design", description: "Crafting visual storefront designs tailored for effortless product discovery and quick purchasing." },
+                    { step: "03", title: "Store Engineering & Payments", description: "Building custom checkout flows, cart management, search filtering, and payment gateways." },
+                    { step: "04", title: "Security & PCI Compliance", description: "Setting up SSL, encrypted payment tokens, and fraud protection algorithms." },
+                    { step: "05", title: "Launch & Staff Training", description: "Deploying the store live and training your team on managing orders and inventory." }
+                ],
+                faqs: [
+                    { question: "Which payment gateways can you integrate into our online store?", answer: "We integrate all major global and regional payment gateways, including Stripe, PayPal, Apple Pay, Google Pay, Tap, HyperPay, and PayTabs." },
+                    { question: "Can you handle multi-currency and multi-language e-commerce?", answer: "Yes! We specialize in localized e-commerce platforms with dynamic currency conversion and multi-language storefronts." }
+                ]
+            },
+            ai: {
+                badge: "AI & Automation",
+                title: "Custom AI Solutions & Intelligent Automation",
+                tagline: "Empower Your Business with Practical Artificial Intelligence",
+                heroDescription: "We build custom AI chatbots, machine learning integrations, workflow automation engines, and predictive analytics that save time and optimize decision-making.",
+                stats: [
+                    { number: "80%", label: "Manual Hours Saved" },
+                    { number: "24/7", label: "Automated Customer Service" },
+                    { number: "<1s", label: "AI Bot Response Time" },
+                    { number: "95%+", label: "Accuracy Rate" }
+                ],
+                overview: {
+                    heading: "Unlocking Next-Level Efficiency Through Artificial Intelligence",
+                    paragraphs: [
+                        "Artificial Intelligence is no longer a luxury — it is a critical driver of competitive advantage. At Novexa, we translate cutting-edge AI technologies into practical, enterprise-grade business applications.",
+                        "Whether you want to build intelligent customer support chatbots powered by custom Knowledge Bases, automate complex document processing, or implement predictive analytics, we deliver tailored AI solutions integrated directly into your existing software."
+                    ]
+                },
+                deliverables: [
+                    "Custom LLM / OpenAI API Integration & RAG Systems",
+                    "Intelligent 24/7 Customer Support Chatbots",
+                    "Automated Document & Data Extraction Workflows",
+                    "Custom Fine-Tuned AI Recommendation Models",
+                    "Internal Knowledge Base Search Engines"
+                ],
+                benefits: [
+                    { title: "24/7 Instant Support", description: "AI bots resolve up to 80% of customer inquiries instantly without human intervention." },
+                    { title: "Reduced Operational Costs", description: "Automate repetitive data entry and repetitive tasks to free up team capacity." },
+                    { title: "Data-Driven Insights", description: "Leverage machine learning to uncover hidden patterns and customer preferences." },
+                    { title: "Private Data Protection", description: "Enterprise AI setups that keep your proprietary business data isolated and secure." }
+                ],
+                techStack: ["OpenAI API", "Python", "LangChain", "Pinecone Vector DB", "FastAPI", "TensorFlow", "Node.js", "LlamaIndex"],
+                process: [
+                    { step: "01", title: "AI Opportunity Audit", description: "Evaluating your business workflows to pinpoint high-ROI opportunities for AI automation." },
+                    { step: "02", title: "Data Preparation & RAG Setup", description: "Structuring your proprietary documentation and vector databases for accurate AI responses." },
+                    { step: "03", title: "Model Integration & Prompting", description: "Connecting fine-tuned AI models to your web or mobile applications with robust fallback logic." },
+                    { step: "04", title: "Testing & Fine-Tuning", description: "Conducting rigorous accuracy benchmarks and safety alignment testing." },
+                    { step: "05", title: "Deployment & Continuous Learning", description: "Launching your AI solution into production with active telemetry and performance logging." }
+                ],
+                faqs: [
+                    { question: "Is our proprietary business data safe when using your AI solutions?", answer: "Yes! We implement private vector stores and strict enterprise API controls ensuring your business data is never used to train public models." },
+                    { question: "Can AI chatbots integrate with our existing CRM and database?", answer: "Absolutely. Our AI solutions connect directly to your CRM, database, or helpdesk platform to execute real actions and update records." }
+                ]
+            }
         }
     },
     projects: {

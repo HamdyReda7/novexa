@@ -37,6 +37,7 @@ function Services() {
                         return (
                             <ServiceCard
                                 key={key}
+                                serviceKey={key}
                                 icon={serviceIcons[key]}
                                 title={title}
                                 description={description}

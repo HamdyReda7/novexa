@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { 
     FiMenu, 
     FiX, 
@@ -29,6 +30,8 @@ function Navbar() {
     const { t, language } = useTranslation();
     const { toggleLanguage } = useLanguage();
     const { theme, toggleTheme } = useTheme();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const [isScrolled, setIsScrolled] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -90,6 +93,26 @@ function Navbar() {
 
     const handleNavClick = useCallback((e, sectionId) => {
         e.preventDefault();
+        
+        if (isSidebarOpen) {
+            closeSidebar();
+        }
+
+        if (location.pathname !== "/") {
+            navigate("/", { replace: false });
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    const computedStyle = window.getComputedStyle(element);
+                    const scrollMarginTop = parseInt(computedStyle.scrollMarginTop, 10) || 84;
+                    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                    const targetPosition = sectionId === "home" ? 0 : elementPosition - scrollMarginTop;
+                    window.scrollTo({ top: targetPosition, behavior: "smooth" });
+                }
+            }, 100);
+            return;
+        }
+
         const element = document.getElementById(sectionId);
         if (!element) return;
 
@@ -98,10 +121,6 @@ function Navbar() {
 
         const elementPosition = element.getBoundingClientRect().top + window.scrollY;
         const targetPosition = sectionId === "home" ? 0 : elementPosition - scrollMarginTop;
-
-        if (isSidebarOpen) {
-            closeSidebar();
-        }
 
         isProgrammaticScrollRef.current = true;
         setActiveSection(sectionId);
@@ -114,7 +133,7 @@ function Navbar() {
         setTimeout(() => {
             isProgrammaticScrollRef.current = false;
         }, 800);
-    }, [isSidebarOpen, closeSidebar]);
+    }, [isSidebarOpen, closeSidebar, location.pathname, navigate]);
 
     useEffect(() => {
         const sections = ["home", "services", "projects", "about", "contact"];

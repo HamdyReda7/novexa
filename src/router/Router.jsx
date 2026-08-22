@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import AllHome from "../pages/Home/AllHome";
+import ServiceDetails from "../pages/Services/ServiceDetails";
 
 // Security and Authentication Guards
 import ProtectedRoute from "../components/ProtectedRoute";
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <AllHome />,
+            },
+            {
+                path: "services/:serviceId",
+                element: <ServiceDetails />,
             },
         ],
     },
