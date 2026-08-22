@@ -5,8 +5,8 @@
 .service-details-page {
     background-color: var(--bg);
     color: var(--text);
-    min-height: 100vh;
-    padding-top: var(--navbar-height, 84px);
+    min-height: calc(100vh - var(--navbar-height, 84px));
+    padding-top: 0;
     transition: background-color var(--transition), color var(--transition);
 }
 
@@ -616,7 +616,7 @@
 
 /* --- Bottom CTA Banner --- */
 .service-details__bottom-cta {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .bottom-cta__card {

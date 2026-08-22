@@ -8,9 +8,11 @@ function ProjectCard({ project }) {
 
     // Extract clean display domain (e.g. sayedzyada.com)
     let displayDomain = "";
+    let validUrl = "#";
     try {
         if (project.link && project.link !== "#") {
-            const urlObj = new URL(project.link.startsWith("http") ? project.link : `https://${project.link}`);
+            validUrl = project.link.startsWith("http") ? project.link : `https://${project.link}`;
+            const urlObj = new URL(validUrl);
             displayDomain = urlObj.hostname.replace("www.", "");
         }
     } catch {
@@ -26,10 +28,16 @@ function ProjectCard({ project }) {
                     <span className="dot dot--yellow" />
                     <span className="dot dot--green" />
                 </div>
-                <div className="browser-url-pill">
+                <a 
+                    href={validUrl} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="browser-url-pill"
+                    title={validUrl !== "#" ? validUrl : displayDomain}
+                >
                     <FiGlobe size={11} className="browser-url-icon" />
                     <span className="browser-url-text">{displayDomain || "novexacode.com"}</span>
-                </div>
+                </a>
             </div>
 
             {/* Showcase Image Frame */}
@@ -49,7 +57,7 @@ function ProjectCard({ project }) {
 
                 <div className="project-card__overlay">
                     <a 
-                        href={project.link || "#"} 
+                        href={validUrl} 
                         target="_blank" 
                         rel="noreferrer" 
                         className="project-card__view-btn"
@@ -69,7 +77,14 @@ function ProjectCard({ project }) {
                 </div>
 
                 <h3 className="project-card__title" title={project.title}>
-                    {project.title}
+                    <a 
+                        href={validUrl} 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="project-card__title-link"
+                    >
+                        {project.title}
+                    </a>
                 </h3>
                 
                 <p className="project-card__description" title={project.description}>
@@ -78,7 +93,7 @@ function ProjectCard({ project }) {
 
                 <div className="project-card__footer">
                     <a 
-                        href={project.link || "#"} 
+                        href={validUrl} 
                         target="_blank" 
                         rel="noreferrer" 
                         className="project-card__link"
