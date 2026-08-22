@@ -28,16 +28,6 @@ function ProjectCard({ project }) {
                     <span className="dot dot--yellow" />
                     <span className="dot dot--green" />
                 </div>
-                <a 
-                    href={validUrl} 
-                    target="_blank" 
-                    rel="noreferrer" 
-                    className="browser-url-pill"
-                    title={validUrl !== "#" ? validUrl : displayDomain}
-                >
-                    <FiGlobe size={11} className="browser-url-icon" />
-                    <span className="browser-url-text">{displayDomain || "novexacode.com"}</span>
-                </a>
             </div>
 
             {/* Showcase Image Frame */}
